@@ -1,69 +1,141 @@
-# Stroke Classifier
+# Stroke Prediction Machine Learning Model
 
 ## Project Description
 
-Stroke is a serious medical condition that occurs when the blood supply to part of the brain is interrupted or reduced, leading to brain damage and potential long-term disability or death. The risk of stroke is affected by a wide range of factors, including age, gender, hypertension, heart disease, obesity, and smoking.Stroke is an emergency condition that needs to be treated as soon as possible, because brain cells can die in just a matter of minutes. Prompt and appropriate treatment measures can minimize the level of brain damage and prevent possible complications.
+Stroke is a serious medical condition that occurs when the blood supply to part of the brain is interrupted or reduced, leading to brain damage and potential long-term disability or death. The risk of stroke is affected by a wide range of factors, including age, gender, hypertension, heart disease, obesity, and smoking.
 
-In this machine learning project, the overall topic that will be resolved is in the health sector regarding stroke, where it will try to predict the possibility of a stroke in a person with certain conditions based on several factors including: age, certain diseases (hypertension, heart disease) who are at high risk of developing stroke. strokes, cigarettes, etc.
+Detecting a stroke in its early stages brings numerous advantages, including timely medical intervention, reduced brain damage, prevention of long-term disabilities, identification of underlying causes, and the facilitation of swift medical decision-making to optimize patient outcomes.
 
-As previously explained, stroke can kill the sufferer in a matter of minutes. Detecting stroke with the existing causative factors with the help of machine learning can be very useful in the world of health to detect stroke early in order to increase the sense of heart among sufferers so that strokes can be prevented early.
+For this project, our objective is to create a machine learning model for early stroke detection, focusing on various causative factors. This model aims to assist clinical teams in predicting or assessing the risk of stroke occurrence, enabling timely medical intervention, minimizing brain damage, preventing long-term disabilities, identifying underlying causes, and facilitating quick medical decision-making to optimize patient outcomes.
 
+## Data Overview
+The stroke dataset comprises a compilation of patients' medical records. It encompasses a wide range of information, including patient demographics, medical history, lifestyle factors, and the presence or absence of a stroke for each patient.
 
-
-## Objective 
-
-The project objective is to  develop a machine learning model for early stroke prediction.
-
-
-##  Dataset 
-
-The stroke dataset is a collection of medical records for patients. The dataset includes information on patient demographics, medical history, and lifestyle factors, as well as whether or not each patient had a stroke.
-
-https://www.kaggle.com/datasets/fedesoriano/stroke-prediction-dataset?select=healthcare-dataset-stroke-data.csv 
-
-The goal of this dataset is to develop a predictive model that can accurately identify patients who are at high risk of stroke, so that appropriate preventative measures can be taken to reduce their risk.
-
-<img width="846" alt="image" src="https://github.com/yeyanwang/stroke_classifier/assets/116701851/65f71358-7d88-4b14-bb81-04aba45e9336">
+ Here is a snippet of the dataset:
+ 
+ <img width="829" alt="image" src="https://github.com/MeerKar/Project-4-Stroke-Predict/assets/116701851/fd542bcf-570c-4474-b891-0a427bdb263a">
 
 
+## Built With
 
+. Python and Packages (eg. scikit-learn, matplotlib, searborn, pickle, etc.)
+. Flask
+. HTML
+. CSS
 
-## Solution 
+# Getting Started
 
-Making Machine Learning models with the Random Forest Algorithm that can classify someone who has the potential to have a stroke.
+## Prerequisites
 
-# Exploratory Data Analysis (EDA) 
+Make sure you have installed all of the following prerequisites on your development machine:
 
-### Examine & Impute Missing Values
+. Git
+. Python and set up your virtual environment
+. pip install flask globally
+. Your favoriate code editor (e.g. VScode, etc.)
+. Your favoriate browser (e.g. Google Chrome, etc.)
 
- <img width="783" alt="image" src="https://github.com/yeyanwang/stroke_classifier/assets/116701851/45df1501-6554-42c1-a717-b3f7a679c4ee">
+## Installation
 
-### Examine Data Distribution on Feature Variables 
+1. Clone this repo and save it in your local directory, to clone with URL run the following code in terminal
 
-<img width="659" alt="image" src="https://github.com/yeyanwang/stroke_classifier/assets/116701851/23b59170-d4cb-4be7-a8ca-572a2b48ce13">
+ git clone (https://github.com/MeerKar/Project-4-Stroke-Predict)
 
-### Examine Data Distribution on Target Variable
+2. Start Flask app by running the following code in terminal
 
-<img width="792" alt="image" src="https://github.com/yeyanwang/stroke_classifier/assets/116701851/33abaa73-a197-48a0-ab27-410523997c5c">
+3.  python app.py
 
-### Examine & Handle Singleton Record
+Visit localhost: 5000 in your browser and enjoy!
 
-<img width="762" alt="image" src="https://github.com/yeyanwang/stroke_classifier/assets/116701851/21795c44-4329-4391-a511-01c4f0fb45c1">
+# Machine Learning Pipline
 
+## 1. Data Collection
+   Data was collected from Kaggle
+
+## 2. Model Selection
+
+The Random Forest Classifier was selected for this problem due to its reputation for achieving high accuracy in classification tasks. It is a popular choice in the healthcare and medical industry, where precise and reliable predictions are crucial.
+
+# Exploratory Data Analysis (EDA)
+
+The below snippets are some interesting observations we discovered:
+
+1. Data Distribution with Histogram Analysis
+
+<img width="759" alt="image" src="https://github.com/MeerKar/Project-4-Stroke-Predict/assets/116701851/0f1c9678-fb9b-46ec-b69a-42b04a5afc0e">
+
+2. Closer Examination on Target Variable
+
+<img width="700" alt="image" src="https://github.com/MeerKar/Project-4-Stroke-Predict/assets/116701851/0bcac8c9-00ef-443a-8dcf-f9f8730ae62d">
+
+3. Missing Values on 'bmi' column
+
+<img width="618" alt="image" src="https://github.com/MeerKar/Project-4-Stroke-Predict/assets/116701851/ff8e7397-5d20-4d0e-a298-2751913e0c0d">
+
+4. Filled in Missing Values with Imputed values
+
+<img width="960" alt="image" src="https://github.com/MeerKar/Project-4-Stroke-Predict/assets/116701851/7eb64342-4729-490e-a076-e0e78ff90ea2">
+
+5. Singleton Record on 'gender' column
+
+<img width="718" alt="image" src="https://github.com/MeerKar/Project-4-Stroke-Predict/assets/116701851/21796d20-3e9b-4efd-a3fb-2f346382459b">
+
+6. Dropped Singleton Record
+
+<img width="788" alt="image" src="https://github.com/MeerKar/Project-4-Stroke-Predict/assets/116701851/65337cc7-aa67-40ad-898c-880cb0055084">
+
+7. Uneven Distribution 'bmi' values
+
+<img width="588" alt="image" src="https://github.com/MeerKar/Project-4-Stroke-Predict/assets/116701851/b7615e3a-8f34-4740-b461-4609550c79bd">
+
+8. Binning 'bmi' values (Model 3 only) image
+
+<img width="771" alt="image" src="https://github.com/MeerKar/Project-4-Stroke-Predict/assets/116701851/1e1b19b6-d891-4209-bf16-9612be1923d7">
 
 # Data Preprocessing
 
-Data Preprocessing is divided into four different parts.
+##  Data was cleaned and prepared for further analysis. This includes:
 
-1. Handle Imbalanced data 
+1. Applied oversampling methods to handle imbalanced data
+
+2. Apllied encoding to categorical varibales
+
+3. Applied feature scaling to transform numerical features into a consistent range
+
+4. Divided data into training and testing sets using train_test_split module
+
+## Modeling Training and Testing
+
+1. Trained 3 models using different resampling methods
+2. Tested the models
+3. 
+# Evaluation
+
+Utilized accuracy scores, confusion matrix and classification reports to compare to access the performance of all 3 models
+See more detail about our final model
+
+# Model Deployment with Flask
+
+1. Implemented the model logic in our home route to handle incoming requests
  
-2. Feature Scaling
- 
-3. Encode Categorical Variables
- 
-4. Train test split.
+2. Created Web-based UI with HTML and CSS
 
+Check out the snippets below:
 
+## Form Page Example:
 
+<img width="1358" alt="image" src="https://github.com/MeerKar/StrokePrediction/assets/116701851/8f846ee6-eeeb-43c2-b4f0-511b6aac19e0">
+
+## Result Page Example:
+
+<img width="1428" alt="image" src="https://github.com/MeerKar/StrokePrediction/assets/116701851/7b93d045-3baa-414a-9fbd-2e0cba0a0f1b">
+
+### Credits
+
+ Kevin Lee
+
+ Kaggle
+
+ UC Berkely Extension Data Analytics Bootcamp
 
 
