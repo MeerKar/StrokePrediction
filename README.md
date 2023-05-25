@@ -13,7 +13,7 @@ The stroke dataset comprises a compilation of patients' medical records. It enco
 
  Here is a snippet of the dataset:
  
- <img width="829" alt="image" src="https://github.com/MeerKar/Project-4-Stroke-Predict/assets/116701851/fd542bcf-570c-4474-b891-0a427bdb263a">
+<img width="1433" alt="image" src="https://github.com/MeerKar/StrokePrediction/assets/116701851/e511840c-e0b6-4e5b-9b81-317bcc8a02b1">
 
 
 ## Built With
@@ -62,35 +62,38 @@ The below snippets are some interesting observations we discovered:
 
 1. Data Distribution with Histogram Analysis
 
-<img width="759" alt="image" src="https://github.com/MeerKar/Project-4-Stroke-Predict/assets/116701851/0f1c9678-fb9b-46ec-b69a-42b04a5afc0e">
+<img width="761" alt="image" src="https://github.com/MeerKar/StrokePrediction/assets/116701851/73ace852-24bc-4444-9318-107890cd797c">
 
 2. Closer Examination on Target Variable
 
-<img width="700" alt="image" src="https://github.com/MeerKar/Project-4-Stroke-Predict/assets/116701851/0bcac8c9-00ef-443a-8dcf-f9f8730ae62d">
+<img width="693" alt="image" src="https://github.com/MeerKar/StrokePrediction/assets/116701851/7222f9d0-d7ea-4e68-aa80-e081f06040a0">
 
 3. Missing Values on 'bmi' column
 
-<img width="618" alt="image" src="https://github.com/MeerKar/Project-4-Stroke-Predict/assets/116701851/ff8e7397-5d20-4d0e-a298-2751913e0c0d">
+<<img width="617" alt="image" src="https://github.com/MeerKar/StrokePrediction/assets/116701851/e7459afd-42e3-4ec9-8365-99f8ae64e5ac">
 
 4. Filled in Missing Values with Imputed values
 
-<img width="960" alt="image" src="https://github.com/MeerKar/Project-4-Stroke-Predict/assets/116701851/7eb64342-4729-490e-a076-e0e78ff90ea2">
+<img width="769" alt="image" src="https://github.com/MeerKar/StrokePrediction/assets/116701851/6423fcf4-5eae-4868-a8c2-ae1f835e366c">>
 
 5. Singleton Record on 'gender' column
 
-<img width="718" alt="image" src="https://github.com/MeerKar/Project-4-Stroke-Predict/assets/116701851/21796d20-3e9b-4efd-a3fb-2f346382459b">
+<img width="718" alt="image" src="https://github.com/MeerKar/StrokePrediction/assets/116701851/37d2ea4a-ff68-41b7-adea-5128e24c2353">
 
 6. Dropped Singleton Record
 
-<img width="788" alt="image" src="https://github.com/MeerKar/Project-4-Stroke-Predict/assets/116701851/65337cc7-aa67-40ad-898c-880cb0055084">
+<img width="747" alt="image" src="https://github.com/MeerKar/StrokePrediction/assets/116701851/4d0b7cdd-3b14-419f-979e-eae2690554ff">
 
 7. Uneven Distribution 'bmi' values
 
-<img width="588" alt="image" src="https://github.com/MeerKar/Project-4-Stroke-Predict/assets/116701851/b7615e3a-8f34-4740-b461-4609550c79bd">
+<img width="583" alt="image" src="https://github.com/MeerKar/StrokePrediction/assets/116701851/2fae38b9-32cf-48c7-8e8c-58b5692ad7a2">
 
 8. Binning 'bmi' values (Model 3 only) image
 
-<img width="771" alt="image" src="https://github.com/MeerKar/Project-4-Stroke-Predict/assets/116701851/1e1b19b6-d891-4209-bf16-9612be1923d7">
+<img width="767" alt="image" src="https://github.com/MeerKar/StrokePrediction/assets/116701851/9aa81e40-300a-4bb8-aee3-1273adcc1078">
+
+<img width="591" alt="image" src="https://github.com/MeerKar/StrokePrediction/assets/116701851/11006d3e-fd39-47b0-a7a3-337ccd869c07">
+
 
 # Data Preprocessing
 
@@ -108,7 +111,7 @@ The below snippets are some interesting observations we discovered:
 
 1. Trained 3 models using different resampling methods
 2. Tested the models
-3. 
+
 # Evaluation
 
 Utilized accuracy scores, confusion matrix and classification reports to compare to access the performance of all 3 models
