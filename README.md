@@ -45,12 +45,12 @@ Make sure you have installed all of the following prerequisites on your developm
 
 3.  python app.py
 
-Visit localhost: 5000 in your browser and enjoy!
+Visit [localhost: 5000](http://127.0.0.1:5000/) in your browser and enjoy!
 
 # Machine Learning Pipline
 
 ## 1. Data Collection
-   Data was collected from Kaggle
+   Data was collected from kaggle
 
 ## 2. Model Selection
 
